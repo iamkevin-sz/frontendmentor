@@ -51,6 +51,7 @@ body {
 .tag-learning {
   background-color: var(--Yellow);
   display:inline;
+  width: 82px;
   padding: 4px 12px;
   font-weight: 700;
   border-radius: 4px;
@@ -74,6 +75,11 @@ body {
     align-items: center;
     /* justify-content: center; */
     gap: 12px;
+}
+.avatar img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 .avatar h4{
