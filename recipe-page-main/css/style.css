@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+
+  /* ## Typography */
+  /* ### Body */
+  --Font-size-paragraph: 16px;
+}
+
+body {
+  /* font-family: 'Outfit', sans-serif; */
+  font-size: var(--Font-size-paragraph);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  /* font-family: 'Outfit', sans-serif; */
+}
+p,
+ul li,
+ol li,
+tr td {
+  font-size: var(--Font-size-paragraph);
+  color: var(--Wenge-Brown);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.container img {
+  width: 100%;
+  /* gap: 120px; */
+}
+.container-recipe {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  gap: 20px;
+}
+
+/* PREPARATION */
+
+.container-recipe__preparation {
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 15px;
+  background-color: var(--Rose-White);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.container-recipe__preparation p {
+  color: var(--Dark-Raspberry);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.container-recipe__preparation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-items: center;
+  align-content: center;
+}
+
+.container-recipe__preparation ul li {
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+  margin-left: 18px;
+  padding: 0 25px;
+}
+
+/* INGREDIENTS */
+
+.container-recipe__ingredients {
+  border-bottom: 1px solid var(--Light-Grey);
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container-recipe__ingredients h2 {
+  color: var(--Nutmeg);
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.container-recipe__ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-recipe__ingredients ul li {
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+  margin-left: 25px;
+  padding: 0 25px;
+}
+
+/* INSTRUCTIONS */
+
+.container-recipe__instructions {
+  padding-bottom: 20px;
+}
+
+.container-recipe__instructions h2 {
+  color: var(--Nutmeg);
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.container-recipe__instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-recipe__instructions ol li {
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+  margin-left: 25px;
+  padding: 0 10px;
+}
+
+/* NUTRITION */
+
+.container-recipe__nutrition {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container-recipe__nutrition h2 {
+  color: var(--Nutmeg);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.container-recipe__nutrition table tr {
+  display: flex;
+  /* flex-direction: column; */
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--Light-Grey);
+  justify-content: space-around;
+  /* gap: 55px; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 650px) {
+  p,
+  ul li,
+  ol li,
+  tr td {
+    font-size: 13px;
+    color: var(--Wenge-Brown);
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+  }
+  main {
+    background-color: var(--Eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+  .container {
+    width: 600px;
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
+    margin-top: 20px;
+    width: 550px;
+    border-radius: 10px;
+  }
+}
